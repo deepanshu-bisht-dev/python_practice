@@ -1,5 +1,4 @@
 import pyttsx3
 engine = pyttsx3.init()
-engine.say("deepu" \
-" behen ka lund")
+engine.say("deepu")
 engine.runAndWait()
