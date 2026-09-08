@@ -12,4 +12,4 @@ try:
 except FileNotFoundError:
     print("The specified directory does not exist.")
 except PermissionError:
-    print("You do not have permission to access this directory.")
+    print("You do not have permission to access this director.")
