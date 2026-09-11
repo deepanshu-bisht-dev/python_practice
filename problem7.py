@@ -1,0 +1,5 @@
+x = int(input("No. of days A took to complete the work:"))
+y = int(input("No. of days B took to complete the work:"))
+z = int(input("No. of days C took to complete the work:"))
+total = (x*y*z)/(x*y+y*z+z*x)
+print(f"No. of days if they work together is {total}")
