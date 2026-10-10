@@ -4,15 +4,15 @@ def is_valid(s):
     pairs = {")": "(", "}": "{", "]": "["}
     for ch in s:
         if ch in "({[":
-            stack.append(ch)               # opening bracket push karo
+            stack.append(ch)               
         elif ch in pairs:
             if not stack or stack.pop() != pairs[ch]:
-                return False               # match nahi hua
-    return len(stack) == 0                 # end me stack khali hona chahiye
+                return False               
+    return len(stack) == 0                 
 
 
 # Tests
-print(is_valid("({[]})"))   # True
-print(is_valid("({[}])"))   # False
-print(is_valid("("))        # False
-print(is_valid(""))         # True
+print(is_valid("({[]})"))   
+print(is_valid("({[}])"))   
+print(is_valid("("))        
+print(is_valid(""))         
